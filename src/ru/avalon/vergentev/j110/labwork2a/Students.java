@@ -1,12 +1,12 @@
 package ru.avalon.vergentev.j110.labwork2a;
 
 public class Students extends Persons {
-    Level LEVEL;
+    Consts LEVEL;
     private int courseNumber;
     private String dissertationTitle;
 
     //Constructors
-    public Students(String surname, String name, Sex SEX, String faculty, Level LEVEL, int courseNumber) {
+    public Students(String surname, String name, Consts SEX, String faculty, Consts LEVEL, int courseNumber) {
         super(surname, name, SEX, faculty);
         this.LEVEL = LEVEL;
         setCourseNumber(courseNumber);
@@ -25,8 +25,8 @@ public class Students extends Persons {
         }
         System.out.print(getCourseNumber() + " year ");
         switch (LEVEL) {
-        case BACHELOR: System.out.print(Level.BACHELOR + "'s student. "); break;
-        case MASTER: System.out.print(Level.MASTER + "student. "); break;
+        case BACHELOR: System.out.print(Consts.BACHELOR + "'s student. "); break;
+        case MASTER: System.out.print(Consts.MASTER + "student. "); break;
     }
 }
 

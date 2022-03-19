@@ -4,10 +4,10 @@ public class Persons {
     private String surname;
     private String name;
     private String faculty;
-    Sex SEX;
+    Consts SEX;
 
     //Constructors
-    public Persons(String surname, String name, Sex SEX, String faculty) {
+    public Persons(String surname, String name, Consts SEX, String faculty) {
         setSurname(surname);
         setName(name);
         this.SEX = SEX;

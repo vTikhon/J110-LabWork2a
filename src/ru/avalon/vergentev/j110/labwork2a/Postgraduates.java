@@ -6,7 +6,7 @@ public class Postgraduates extends Persons {
 
 
     //Constructors
-    public Postgraduates(String surname, String name, Sex SEX, String faculty, String dissertationTitle) {
+    public Postgraduates(String surname, String name, Consts SEX, String faculty, String dissertationTitle) {
         super(surname, name, SEX, faculty);
         setDissertationTitle(dissertationTitle);
     }

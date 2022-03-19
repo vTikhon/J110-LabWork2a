@@ -1,11 +1,11 @@
 package ru.avalon.vergentev.j110.labwork2a;
 
 public class Teachers extends Persons {
-    Degree DEGREE;
+    Consts DEGREE;
     private String specialization;
 
     //Constructors
-    public Teachers(String surname, String name, Sex SEX, String faculty, Degree DEGREE, String specialization) {
+    public Teachers(String surname, String name, Consts SEX, String faculty, Consts DEGREE, String specialization) {
         super(surname, name, SEX, faculty);
         this.DEGREE = DEGREE;
         setSpecialization(specialization);
